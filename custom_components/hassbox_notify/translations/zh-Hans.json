@@ -1,0 +1,38 @@
+{
+  "config": {
+    "flow_title": "HassBox通知报警",
+    "step": {
+      "bind_wechat": {
+        "title": "微信扫码绑定",
+        "description": "\n{qr_image}\n\n"
+      }
+    },
+    "abort": {
+      "single_instance_allowed": "该集成已经配置过了，且只能配置一次。若要重新配置，请先删除旧集成。",
+      "qrcode_error": "{errmsg}"
+    }
+  },
+  "services": {
+    "hassbox_notify": {
+      "description": "HassBox通知报警，可将报警信息发送到你的微信，支持短信和电话语音。紧急报警推荐使用电话语音！",
+      "fields": {
+        "message": {
+          "name": "通知报警内容",
+          "description": "由于微信目标消息限制，文本内容长度统一不得多余20个字符。"
+        },
+        "wechat": {
+          "name": "发送到你的微信",
+          "description": "通知报警将通过HassBox微信公众号接收。务必保持关注HassBox微信公众号。为避免错过重要的通知报警，建议进入HassBox微信公众号设置，关闭消息免打扰。"
+        },
+        "sms": {
+          "name": "发送短信提醒",
+          "description": "开启后，请输入正确的手机号，支持多个手机号。首次使用务必测试下，以免无法触达。"
+        },
+        "voice": {
+          "name": "电话语音提醒",
+          "description": "开启后，请输入正确的手机号，支持多个手机号。首次使用务必测试下，以免无法触达。"
+        }
+      }
+    }
+  }
+}

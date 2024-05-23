@@ -1,0 +1,22 @@
+hassbox_notify:
+  fields:
+    message:
+      required: true
+      selector:
+        text:
+    wechat:
+      required: true
+      default: true
+      example: false
+      selector:
+        boolean:
+    sms:
+      required: false
+      selector:
+        text:
+          multiple: true
+    voice:
+      required: false
+      selector:
+        text:
+          multiple: true
