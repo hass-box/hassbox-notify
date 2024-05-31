@@ -1,5 +1,5 @@
 #!/bin/bash
-# curl -fsSL get.hassbox.cn/hassbox-store | bash
+# curl -fsSL get.hassbox.cn/hassbox-notify | bash
 set -e
 
 export LC_ALL=en_US.UTF-8
