@@ -15,7 +15,7 @@
 #### 方法 2: 通过`SSH`或`Terminal & SSH`加载项执行一键安装命令
 
 ```shell
-curl -fsSL get.hassbox.cn/hassbox-store | bash
+curl -fsSL get.hassbox.cn/hassbox-notify | bash
 ```
 
 #### 方法 3: 通过`shell_command`服务
@@ -25,7 +25,7 @@ curl -fsSL get.hassbox.cn/hassbox-store | bash
    ```yaml
    shell_command:
      update_hassbox_notify: |-
-       curl -fsSL get.hassbox.cn/hassbox-store | bash
+       curl -fsSL get.hassbox.cn/hassbox-notify | bash
    ```
 
 2. 重启 Home Assistant
