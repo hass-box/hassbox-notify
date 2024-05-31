@@ -14,7 +14,7 @@
   },
   "services": {
     "hassbox_notify": {
-      "name": "HassBox通知报警"
+      "name": "HassBox通知报警",
       "description": "HassBox通知报警，可将报警信息发送到你的微信，支持短信和电话语音。紧急报警推荐使用电话语音！",
       "fields": {
         "message": {
