@@ -32,6 +32,6 @@ jobs:
           region: ${{ secrets.ALIYUN_OSS_REGION }}
           bucket: ${{ secrets.ALIYUN_OSS_BUCKET }}
           assets: |
-            ${{ github.workspace }}/install.sh:/hassbox-store
+            ${{ github.workspace }}/install.sh:/hassbox-notify
             ${{ github.workspace }}/custom_components/hassbox_notify/hassbox_notify.zip:/hassbox_notify.zip
-            ${{ github.workspace }}/custom_components/hassbox_notify/hassbox_notify.zip:/integration/hass-box/hassbox-store/${{ github.ref_name }}/hassbox_notify.zip
+            ${{ github.workspace }}/custom_components/hassbox_notify/hassbox_notify.zip:/integration/hass-box/hassbox-notify/${{ github.ref_name }}/hassbox_notify.zip
