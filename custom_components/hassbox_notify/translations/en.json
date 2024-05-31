@@ -4,7 +4,7 @@
     "step": {
       "bind_wechat": {
         "title": "微信扫码绑定",
-        "description": "\n{qr_image}\n\n"
+        "description": "\n{qr_image}\n\n请使用 微信 扫码绑定，未关注请先关注，绑定成功后再点击提交。"
       }
     },
     "abort": {
